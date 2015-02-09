@@ -59,6 +59,7 @@ button {
 
 /* line 48, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 .menu {
+  display: none;
   list-style: none;
   padding: 5px 0;
   border: 1px solid #710001;
@@ -70,7 +71,7 @@ button {
   margin: 0px;
   background-color: #FF0004; }
 
-/* line 61, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 62, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 .menu a {
   display: block;
   padding: 3px 15px;
@@ -79,12 +80,12 @@ button {
   color: #000;
   text-decoration: none; }
 
-/* line 70, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 71, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 .menu a:hover {
   text-decoration: none;
   color: #FFF; }
 
-/* line 75, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 76, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 button:after {
   content: "";
   display: inline-block;
