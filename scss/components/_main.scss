@@ -1,0 +1,129 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*-----------------------------------------------------------*/
+
+@import "compass/typography/links/unstyled-link";
+$menu-color:#1E2224;
+.main-menu{
+  font-family: 'Open Sans', sans-serif;
+  height:65px;
+  background:$menu-color;
+  margin:0px auto;
+  width:100%;
+  color:#ccc;
+  div{
+    display:inline-block;
+    float:left;
+  }
+  .right{
+    float:right;
+    margin-right:10px;
+    display:inline-block;
+  }
+}
+.logo{
+  padding:0px 15px 10px 5px;
+  font-size:45px;
+  color:white;
+}
+
+.search{
+  margin:15px 20px;
+  .icon-search{
+    margin-left:-25px;
+    color:lighten($menu-color,20%);
+  }
+  input[name="search"]{
+    padding:8px 25px 8px 20px;
+    @include border-radius(3px);
+    font-size:16px;
+    color:lighten($menu-color,50%);
+    background-color:lighten($menu-color,7%);
+    border:0px;
+    &:focus{
+      outline:5px lighten($menu-color,3%) solid;
+    }
+  }
+  
+}
+
+.menu{
+  margin:15px;
+  font-weight:700;
+  color:#ddd;
+  .button{
+    @include border-radius(10px);
+    @include box-shadow(#E35F48 1px 1px 4px);
+    cursor:pointer;
+    &:hover{
+        color:#fff;
+    }
+  }
+  .button .text{
+    background:lighten(#d1361b,10%);
+    padding:9px 10px 8px 10px;
+    float:left;
+    display:inline-block;
+    @include border-left-radius(4px);
+  }
+  .button .drop{
+    background:#d1361b;
+    font-size:20px;
+    padding:4px 10px 7px 10px;
+    float:left;
+    display:inline-block; 
+    @include border-right-radius(4px);
+  }
+  .links{
+    margin:6px 20px;
+    span{
+      padding:0px 12px;
+    }
+    a{
+      @include unstyled-link;
+      &:hover{
+        color:#fff;
+      }
+    }
+  }
+}
+
+.user-picture{
+  height:50px;
+  width:50px;
+  @include border-radius(50px);
+  background: url("http://dribbble.s3.amazonaws.com/users/96387/avatars/small/abc.png?1367708220");
+  background-size:cover;
+  
+  @include box-shadow(white 1px 1px 10px inset);
+  margin:8px 0px;
+}
+.user-name{
+    font-size:17px;
+    font-weight:700;
+    margin:18px 0px;
+    color:white;
+    span{
+      padding:0px 12px;
+    }
+    a{
+      @include unstyled-link;
+    }
+}
