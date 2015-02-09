@@ -10,6 +10,8 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
 }
 
 
@@ -21,7 +23,6 @@ html {
 
 body {
   margin: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 
 drop-down:unresolved {
@@ -32,16 +33,18 @@ drop-down {
   display: inline-block;
 }
 
-drop-down button {
+button {
   background-color: $red;
   padding: 5px 15px;
   color: $white;
   border: 1px solid $dark-red;
   border-radius: 5px;  
   outline: none;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
 }
 
-drop-down .menu {
+.menu {
   list-style: none;
   padding: 5px 0;  
   border: 1px solid $dark-red;
@@ -54,7 +57,7 @@ drop-down .menu {
   background-color: $red;
 }
 
-drop-down .menu a {
+.menu a {
   display: block;
   padding: 3px 15px;
   clear: both;
@@ -63,12 +66,12 @@ drop-down .menu a {
   text-decoration: none;
 }
 
-drop-down .menu a:hover {
+.menu a:hover {
   text-decoration: none;
   color: $white;
 }
 
-drop-down button:after {
+button:after {
   content: "";
   display: inline-block;
   width: 0;

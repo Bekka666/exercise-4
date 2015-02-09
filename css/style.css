@@ -23,38 +23,41 @@ html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  text-size-adjust: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1rem; }
 
-/* line 16, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 18, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 *, *:before, *:after {
   box-sizing: inherit; }
 
 /*-----------------------------------------------------------*/
-/* line 22, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 24, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 body {
-  margin: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+  margin: 15px; }
 
-/* line 27, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 28, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 drop-down:unresolved {
   display: none; }
 
-/* line 30, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 31, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 drop-down {
   position: relative;
   display: inline-block; }
 
-/* line 35, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
-drop-down button {
+/* line 36, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+button {
   background-color: #FF0004;
   padding: 5px 15px;
   color: #FFF;
   border: 1px solid #710001;
   border-radius: 5px;
-  outline: none; }
+  outline: none;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1.25rem; }
 
-/* line 44, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
-drop-down .menu {
+/* line 47, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+.menu {
   list-style: none;
   padding: 5px 0;
   border: 1px solid #710001;
@@ -66,8 +69,8 @@ drop-down .menu {
   margin: 0px;
   background-color: #FF0004; }
 
-/* line 57, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
-drop-down .menu a {
+/* line 60, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+.menu a {
   display: block;
   padding: 3px 15px;
   clear: both;
@@ -75,13 +78,13 @@ drop-down .menu a {
   color: #000;
   text-decoration: none; }
 
-/* line 66, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
-drop-down .menu a:hover {
+/* line 69, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+.menu a:hover {
   text-decoration: none;
   color: #FFF; }
 
-/* line 71, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
-drop-down button:after {
+/* line 74, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+button:after {
   content: "";
   display: inline-block;
   width: 0;
