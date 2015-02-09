@@ -43,9 +43,10 @@ drop-down:unresolved {
 /* line 31, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 drop-down {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
 
-/* line 36, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 37, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 button {
   background-color: #FF0004;
   padding: 5px 15px;
@@ -56,7 +57,7 @@ button {
   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
   font-size: 1.25rem; }
 
-/* line 47, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 48, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 .menu {
   list-style: none;
   padding: 5px 0;
@@ -69,7 +70,7 @@ button {
   margin: 0px;
   background-color: #FF0004; }
 
-/* line 60, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 61, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 .menu a {
   display: block;
   padding: 3px 15px;
@@ -78,12 +79,12 @@ button {
   color: #000;
   text-decoration: none; }
 
-/* line 69, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 70, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 .menu a:hover {
   text-decoration: none;
   color: #FFF; }
 
-/* line 74, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
+/* line 75, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-4/scss/components/main */
 button:after {
   content: "";
   display: inline-block;
