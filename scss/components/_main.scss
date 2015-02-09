@@ -17,124 +17,113 @@ html {
 	box-sizing: inherit;
 }
 
+/*-----------------------------------------------------------*/
 
-body{
-  font-family: sans-serif;
-  @include zero;
-  // Hides close button if there is no js
-  &.noscript .close-btn
-  &.noscript .toggle-btn{
-    display: none;
+@import "compass/typography/links/unstyled-link";
+$menu-color:#1E2224;
+.main-menu{
+  font-family: 'Open Sans', sans-serif;
+  height:65px;
+  background:$menu-color;
+  margin:0px auto;
+  width:100%;
+  color:#ccc;
+  div{
+    display:inline-block;
+    float:left;
+  }
+  .right{
+    float:right;
+    margin-right:10px;
+    display:inline-block;
+  }
+}
+.logo{
+  padding:0px 15px 10px 5px;
+  font-size:45px;
+  color:white;
+}
+
+.search{
+  margin:15px 20px;
+  .icon-search{
+    margin-left:-25px;
+    color:lighten($menu-color,20%);
+  }
+  input[name="search"]{
+    padding:8px 25px 8px 20px;
+    @include border-radius(3px);
+    font-size:16px;
+    color:lighten($menu-color,50%);
+    background-color:lighten($menu-color,7%);
+    border:0px;
+    &:focus{
+      outline:5px lighten($menu-color,3%) solid;
+    }
+  }
+  
+}
+
+.menu{
+  margin:15px;
+  font-weight:700;
+  color:#ddd;
+  .button{
+    @include border-radius(10px);
+    @include box-shadow(#E35F48 1px 1px 4px);
+    cursor:pointer;
+    &:hover{
+        color:#fff;
+    }
+  }
+  .button .text{
+    background:lighten(#d1361b,10%);
+    padding:9px 10px 8px 10px;
+    float:left;
+    display:inline-block;
+    @include border-left-radius(4px);
+  }
+  .button .drop{
+    background:#d1361b;
+    font-size:20px;
+    padding:4px 10px 7px 10px;
+    float:left;
+    display:inline-block; 
+    @include border-right-radius(4px);
+  }
+  .links{
+    margin:6px 20px;
+    span{
+      padding:0px 12px;
+    }
+    a{
+      @include unstyled-link;
+      &:hover{
+        color:#fff;
+      }
+    }
   }
 }
 
-header {
-  padding: 1em 1em;
-  position: relative;
-  background-color: $dark-green;
+.user-picture{
+  height:50px;
+  width:50px;
+  @include border-radius(50px);
+  background: url("http://dribbble.s3.amazonaws.com/users/96387/avatars/small/abc.png?1367708220");
+  background-size:cover;
+  
+  @include box-shadow(white 1px 1px 10px inset);
+  margin:8px 0px;
 }
-
-.toggle-btn{
-	position: absolute;
-	right: 1em;
-	top: 2.5em;
-}
-.close-btn{
-	position: absolute;
-	top: .5em;
-}
-.close-btn, ul{
-	background-color: $dark-green;
-	padding: 1em 0;
-	margin: 0;
-}
-.navigation {
-	@include zero;
-	li{
-		list-style-type: none;
-	a{
-		display: block;
-		padding: .5em 1em;
-		text-align: center;
-		text-decoration: none;
-		color: $text-color;
-		overflow: auto;
-}
-a:hover{
-	color: $green;
-	@include ease(all, 500ms, ease-in-out);
-}
-&first-child a{
-	border-top: 1px solid $green;
-}
-	}}
-.toggle-btn,
-.close-btn{
-	color: $text-color;
-	height: 40px;
-	width: 40px;
-	i{
-		padding: .5em;
-	}
-i:hover{
-	color: $green;
-	@include ease(all, 500ms, ease-in-out);
-}
-	span{
-		@include hide-text;
-	}
-}
-
-@media only screen and (max-width: 60em){
-	.site-wrapper{
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		z-index: 100;
-		.sliding-canvas{
-			width: 100%;
-			height: 100%;
-			position: relative;
-			transform: translateX(0);
-			@include ease(all, 500ms, ease-in-out);
-			
-		} // close SC
-		
-		&[data-state="slide-open"] .sliding-canvas{
-				transform: translateX(-100%);
-			}
-			
-		&[data-state="slide-open"]{
-		overflow: visible;
-	}
-	} // close wrap
-	
-	//NAV
-	.slide-menu{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		bottom: 0;
-		right: -100%;
-		min-height: 600px;
-	}
-} // close MQ
-
-@media only screen and (min-width: 60em){
-	.toggle-btn,
-	.close-btn{
-		display: none;
-	}
-	.slide-menu{
-		position: static;
-		text-align: center;
-	}
-	h1{
-		text-align: center;
-	}
-	.navigation li{
-		text-align: center;
-		display: inline-block;
-	}
+.user-name{
+    font-size:17px;
+    font-weight:700;
+    margin:18px 0px;
+    color:white;
+    span{
+      padding:0px 12px;
+    }
+    a{
+      @include unstyled-link;
+    }
 }
